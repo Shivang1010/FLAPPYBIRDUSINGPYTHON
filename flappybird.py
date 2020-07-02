@@ -282,3 +282,13 @@ def load_images():
             'bird-wingdown': load_image('bird_wing_down.png')}
 
 
+def frames_to_msec(frames, fps=FPS):
+    """Convert frames to milliseconds at the specified framerate.
+
+    Arguments:
+    frames: How many frames to convert to milliseconds.
+    fps: The framerate to use for conversion.  Default: FPS.
+    """
+    return 1000.0 * frames / fps
+
+
